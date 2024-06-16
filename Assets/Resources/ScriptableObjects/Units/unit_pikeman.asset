@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e692397a77c3ab14a860a4edb365d27b, type: 3}
+  m_Name: unit_pikeman
+  m_EditorClassIdentifier: 
+  Name: Pikemen
+  Level: 3
+  MinDamage: 3
+  MaxDamage: 6
+  MinRangeDamage: 0
+  MaxRangeDamage: 0
+  HP: 12
+  NumCounterstrikes: 1
+  NumMoves: 2
+  NumShoots: 0
+  CanFly: 0
+  DwellingType: 4
+  Population: 3000
+  Cost: 300
+  MoraleGroup: 1
+  MeleeDamageSource: 0
+  RangeDamageSource: 3
+  Resistances:
+  - 0
+  - 0
+  - 0
+  Sprites:
+  - {fileID: 261154152, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -1860630950, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: 573857945, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -575096494, guid: eea9b2a869f932641820510112579732, type: 3}

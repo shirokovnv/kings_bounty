@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e692397a77c3ab14a860a4edb365d27b, type: 3}
+  m_Name: unit_knight
+  m_EditorClassIdentifier: 
+  Name: Knights
+  Level: 5
+  MinDamage: 6
+  MaxDamage: 12
+  MinRangeDamage: 0
+  MaxRangeDamage: 0
+  HP: 45
+  NumCounterstrikes: 1
+  NumMoves: 1
+  NumShoots: 0
+  CanFly: 0
+  DwellingType: 4
+  Population: 2500
+  Cost: 1000
+  MoraleGroup: 1
+  MeleeDamageSource: 0
+  RangeDamageSource: 3
+  Resistances:
+  - 0.2
+  - 0.4
+  - 0
+  Sprites:
+  - {fileID: -849673611, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: 1942379143, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -2046454948, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -1321799207, guid: eea9b2a869f932641820510112579732, type: 3}

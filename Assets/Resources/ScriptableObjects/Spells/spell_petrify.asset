@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6a293ecbcb4a042aad7b56296c11ba, type: 3}
+  m_Name: spell_petrify
+  m_EditorClassIdentifier: 
+  Name: Petrify
+  Description: This spell holds an enemy soldier in one place so that they cannot
+    move, however they can still attack adjacent units and retaliate against attacks.
+  Cost: 400
+  Group: 1

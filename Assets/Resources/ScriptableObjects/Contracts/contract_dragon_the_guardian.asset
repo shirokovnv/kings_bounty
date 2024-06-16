@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43493f99ef8d5e94a876da950a451fcd, type: 3}
+  m_Name: contract_dragon_the_guardian
+  m_EditorClassIdentifier: 
+  Title: Dragon The Guardian
+  Alias: Invisible
+  DistinguishingFeatures: '
+
+    No one knows his true origin. Some say he is a
+    dragon with a green body and blue wings, breathing fire. Others claim that he
+    has a human appearance.'
+  Crimes: He is wanted for abuse of psionic abilities, misleading several factions
+    of the continent at once, sedition and robbery.
+  Sprites:
+  - {fileID: -1753179800, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -1664218489, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -1107578269, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: 1064380084, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}

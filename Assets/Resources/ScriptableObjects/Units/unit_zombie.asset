@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e692397a77c3ab14a860a4edb365d27b, type: 3}
+  m_Name: unit_zombie
+  m_EditorClassIdentifier: 
+  Name: Zombies
+  Level: 2
+  MinDamage: 1
+  MaxDamage: 2
+  MinRangeDamage: 0
+  MaxRangeDamage: 0
+  HP: 5
+  NumCounterstrikes: 1
+  NumMoves: 1
+  NumShoots: 0
+  CanFly: 0
+  DwellingType: 2
+  Population: 100
+  Cost: 50
+  MoraleGroup: 4
+  MeleeDamageSource: 0
+  RangeDamageSource: 3
+  Resistances:
+  - 0
+  - 0.15
+  - 0
+  Sprites:
+  - {fileID: -2146258967, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -2089933737, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -1175170963, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -1649124783, guid: eea9b2a869f932641820510112579732, type: 3}

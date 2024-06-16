@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43493f99ef8d5e94a876da950a451fcd, type: 3}
+  m_Name: contract_one_eyed_joe
+  m_EditorClassIdentifier: 
+  Title: One Eyed Joe
+  Alias: Cyclope
+  DistinguishingFeatures: Single eye in center of head,over ten feet tall, only hair
+    on body is beard.
+  Crimes: Joe is wanted for conspiracy against the crown andfor leading an outright
+    attack against the king.
+  Sprites:
+  - {fileID: -759430024, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -1494474545, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -1572991157, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -561505507, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}

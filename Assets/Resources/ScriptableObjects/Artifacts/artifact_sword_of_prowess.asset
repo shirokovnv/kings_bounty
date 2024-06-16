@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf49feb9625016f4488854a087629f4d, type: 3}
+  m_Name: artifact_sword_of_prowess
+  m_EditorClassIdentifier: 
+  Name: Sword of Prowess
+  Description: The Sword of Prowess raises the damage done by your army by 50%.
+  Level: 4
+  WorldSprite: {fileID: 1432855236, guid: 4afad87537bd6f740af05085842f9120, type: 3}
+  InventorySprite: {fileID: 1275118120, guid: ac14c5ef94e796943a85a8e5f47a5e12, type: 3}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf49feb9625016f4488854a087629f4d, type: 3}
+  m_Name: artifact_anchor_of_admiralty
+  m_EditorClassIdentifier: 
+  Name: Anchor of Admiralty
+  Description: The Anchor of Admiralty lowers the cost of renting a ship from 500
+    gold per week to 100 gold per week.
+  Level: 1
+  WorldSprite: {fileID: 1047256405, guid: 4afad87537bd6f740af05085842f9120, type: 3}
+  InventorySprite: {fileID: 1839393377, guid: ac14c5ef94e796943a85a8e5f47a5e12, type: 3}

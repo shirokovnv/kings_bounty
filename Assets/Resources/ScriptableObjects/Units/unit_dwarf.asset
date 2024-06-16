@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e692397a77c3ab14a860a4edb365d27b, type: 3}
+  m_Name: unit_dwarf
+  m_EditorClassIdentifier: 
+  Name: Dwarves
+  Level: 3
+  MinDamage: 2
+  MaxDamage: 4
+  MinRangeDamage: 0
+  MaxRangeDamage: 0
+  HP: 20
+  NumCounterstrikes: 1
+  NumMoves: 1
+  NumShoots: 0
+  CanFly: 0
+  DwellingType: 3
+  Population: 100
+  Cost: 350
+  MoraleGroup: 2
+  MeleeDamageSource: 0
+  RangeDamageSource: 3
+  Resistances:
+  - 0.2
+  - 0.2
+  - 0.3
+  Sprites:
+  - {fileID: 854640890, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -737502108, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -406301279, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -2052370481, guid: eea9b2a869f932641820510112579732, type: 3}

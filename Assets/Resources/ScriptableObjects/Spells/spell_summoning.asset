@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6a293ecbcb4a042aad7b56296c11ba, type: 3}
+  m_Name: spell_summoning
+  m_EditorClassIdentifier: 
+  Name: Summoning
+  Description: This spell creates an army that joins your army. The type of troop
+    is based on your class and rank. The number of troops is based on your spell
+    power.
+  Cost: 1000
+  group: 0

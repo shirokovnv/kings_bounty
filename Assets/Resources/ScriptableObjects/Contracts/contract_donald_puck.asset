@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43493f99ef8d5e94a876da950a451fcd, type: 3}
+  m_Name: contract_donald_puck
+  m_EditorClassIdentifier: 
+  Title: Donald Puck
+  Alias: The seller of stolen goods
+  DistinguishingFeatures: Expensive and gaudy clothes, overweight, and a scruffy
+    beard.
+  Crimes: Donald is wanted for various crimes against the kingdom, including leading
+    a direct assault against the crown and conspiracy.
+  Sprites:
+  - {fileID: -1294484988, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: 103567036, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: 1168001800, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: 341182951, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}

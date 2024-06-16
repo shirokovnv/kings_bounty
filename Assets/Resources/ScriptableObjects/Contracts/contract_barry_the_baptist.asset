@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43493f99ef8d5e94a876da950a451fcd, type: 3}
+  m_Name: contract_barry_the_baptist
+  m_EditorClassIdentifier: 
+  Title: Barry The Baptist
+  Alias: The Baptist
+  DistinguishingFeatures: Threadbare clothes, bald patch with hair combed to cover
+    it, incessant cough.
+  Crimes: Barry is wanted for tax evasion and various minor crimes, as well as for
+    treason. He allowed a group of pirates to enter the castle and free criminals.
+  Sprites:
+  - {fileID: 597430279, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: 1096554098, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: 144027030, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -412821212, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}

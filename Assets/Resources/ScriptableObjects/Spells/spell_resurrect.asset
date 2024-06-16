@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6a293ecbcb4a042aad7b56296c11ba, type: 3}
+  m_Name: spell_resurrect
+  m_EditorClassIdentifier: 
+  Name: Resurrect
+  Description: This spell raises a number of members of a unit equal to your spell
+    power back from dead so that they can continue fighting, to cast this spell there
+    must be something left of the target unit.
+  Cost: 5000
+  Group: 1

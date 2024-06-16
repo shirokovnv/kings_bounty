@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43493f99ef8d5e94a876da950a451fcd, type: 3}
+  m_Name: contract_prince_barrowpine
+  m_EditorClassIdentifier: 
+  Title: Prince Barrowpine
+  Alias: The Elf Lord
+  DistinguishingFeatures: Pointed ears, sharp elfin features, pale blue eyes with
+    no whites, glimmering enchanted coin.
+  Crimes: The prince is one of the leaders of the conspiracy against the crown. He
+    also traffics stolen artifacts.
+  Sprites:
+  - {fileID: 1510485019, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: 652236889, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -1143849988, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -1787159753, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}

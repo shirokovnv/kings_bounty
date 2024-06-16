@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e692397a77c3ab14a860a4edb365d27b, type: 3}
+  m_Name: unit_demon
+  m_EditorClassIdentifier: 
+  Name: Demons
+  Level: 6
+  MinDamage: 8
+  MaxDamage: 10
+  MinRangeDamage: 0
+  MaxRangeDamage: 0
+  HP: 50
+  NumCounterstrikes: 1
+  NumMoves: 1
+  NumShoots: 0
+  CanFly: 1
+  DwellingType: 2
+  Population: 25
+  Cost: 3000
+  MoraleGroup: 4
+  MeleeDamageSource: 0
+  RangeDamageSource: 3
+  Resistances:
+  - 0.1
+  - 0.1
+  - 0.1
+  Ability: 4
+  Sprites:
+  - {fileID: 923285896, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: 1672977303, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -214111800, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: 1452303359, guid: eea9b2a869f932641820510112579732, type: 3}

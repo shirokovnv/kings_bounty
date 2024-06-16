@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43493f99ef8d5e94a876da950a451fcd, type: 3}
+  m_Name: contract_ignatius_copper 1
+  m_EditorClassIdentifier: 
+  Title: Ignatius Copper
+  Alias: Archmage
+  DistinguishingFeatures: Pupil-less eyes, white beard, always wears crimson robes
+    and a matching Skull cap.
+  Crimes: Ignatius is wanted for conspiracy against the crown and for practising
+    forbidden magics.
+  Sprites:
+  - {fileID: -480285537, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -1393837654, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: 72748264, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -30789076, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}

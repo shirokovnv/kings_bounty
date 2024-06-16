@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e692397a77c3ab14a860a4edb365d27b, type: 3}
+  m_Name: unit_barbarian
+  m_EditorClassIdentifier: 
+  Name: Barbarians
+  Level: 4
+  MinDamage: 2
+  MaxDamage: 8
+  MinRangeDamage: 0
+  MaxRangeDamage: 0
+  HP: 35
+  NumCounterstrikes: 3
+  NumMoves: 3
+  NumShoots: 0
+  CanFly: 0
+  DwellingType: 0
+  Population: 50
+  Cost: 750
+  MoraleGroup: 2
+  MeleeDamageSource: 0
+  RangeDamageSource: 3
+  Resistances:
+  - 0
+  - 0
+  - 0.25
+  Sprites:
+  - {fileID: 1680129514, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: 150085944, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: -1584592041, guid: eea9b2a869f932641820510112579732, type: 3}
+  - {fileID: 1595562875, guid: eea9b2a869f932641820510112579732, type: 3}

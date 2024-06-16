@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf49feb9625016f4488854a087629f4d, type: 3}
+  m_Name: artifact_ring_of_snake
+  m_EditorClassIdentifier: 
+  Name: Ring of Snake
+  Description: The Ring of Snake improves your endurance.
+  Level: 2
+  WorldSprite: {fileID: 270985685, guid: 29f06ee4ed87cb947a34318732dce0cd, type: 3}
+  InventorySprite: {fileID: 1574807614, guid: ac14c5ef94e796943a85a8e5f47a5e12, type: 3}

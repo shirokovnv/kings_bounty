@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43493f99ef8d5e94a876da950a451fcd, type: 3}
+  m_Name: contract_sir_lyao
+  m_EditorClassIdentifier: 
+  Title: Sir Lyao
+  Alias: Assassin
+  DistinguishingFeatures: Voluminous robes, bald head, magic symbols engraved on
+    body, levitating ability, cowardy.
+  Crimes: Lyao is wanted for the attempted murder of an uncrowned noble.
+  Sprites:
+  - {fileID: -1335385016, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: 316971602, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -1859690143, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -1515337738, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}

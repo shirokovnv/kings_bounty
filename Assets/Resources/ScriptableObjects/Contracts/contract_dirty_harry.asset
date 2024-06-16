@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43493f99ef8d5e94a876da950a451fcd, type: 3}
+  m_Name: contract_dirty_harry
+  m_EditorClassIdentifier: 
+  Title: Dirty Harry
+  Alias: Gangster
+  DistinguishingFeatures: Always wearing armor and concealed weapons, has two prominent
+    front teeth and an unkept beard.
+  Crimes: Harry, from another land is wanted for his part in a conspiracy to topple
+    the kingdom.
+  Sprites:
+  - {fileID: 1838077206, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: 879118967, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -918388499, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
+  - {fileID: -2114343445, guid: 40d78b1fd33bffd419b9be8959f3520a, type: 3}
