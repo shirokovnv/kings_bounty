@@ -1,7 +1,7 @@
 using Assets.Scripts.Adventure.Events;
 using Assets.Scripts.Shared.Data.Managers;
-using Assets.Scripts.Shared.Events;
 using Assets.Scripts.Shared.Data.State.Adventure;
+using Assets.Scripts.Shared.Events;
 using UnityEngine;
 
 namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs

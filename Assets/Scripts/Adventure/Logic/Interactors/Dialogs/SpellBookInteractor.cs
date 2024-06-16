@@ -1,10 +1,10 @@
+using Assets.Scripts.Adventure.UI.Dialog;
 using Assets.Scripts.Shared.Data.Managers;
-using Assets.Scripts.Shared.Logic.Character;
 using Assets.Scripts.Shared.Data.State.Adventure;
+using Assets.Scripts.Shared.Logic.Character;
 using System;
 using System.Linq;
 using UnityEngine;
-using Assets.Scripts.Adventure.UI.Dialog;
 
 namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {

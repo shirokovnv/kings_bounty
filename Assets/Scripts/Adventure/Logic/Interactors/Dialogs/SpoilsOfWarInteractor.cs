@@ -1,16 +1,16 @@
 using Assets.Scripts.Adventure.Events;
 using Assets.Scripts.Adventure.Logic.Continents.Base;
+using Assets.Scripts.Adventure.Logic.Continents.Object;
 using Assets.Scripts.Adventure.Logic.Puzzle;
 using Assets.Scripts.Adventure.Logic.Systems;
-using Assets.Scripts.Adventure.Logic.Continents.Object;
+using Assets.Scripts.Adventure.UI.Dialog;
 using Assets.Scripts.Combat.Logic.Systems;
 using Assets.Scripts.Shared.Data.Managers;
-using Assets.Scripts.Shared.Events;
-using Assets.Scripts.Shared.Logic.Character;
 using Assets.Scripts.Shared.Data.State.Adventure;
 using Assets.Scripts.Shared.Data.State.Combat;
+using Assets.Scripts.Shared.Events;
+using Assets.Scripts.Shared.Logic.Character;
 using UnityEngine;
-using Assets.Scripts.Adventure.UI.Dialog;
 
 namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {

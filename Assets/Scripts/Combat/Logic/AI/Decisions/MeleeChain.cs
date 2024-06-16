@@ -1,7 +1,6 @@
 using Assets.Scripts.Combat.Logic.AI.Actions.Base;
 using Assets.Scripts.Combat.Logic.AI.Decisions.Melee;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace Assets.Scripts.Combat.Logic.AI.Decisions
 {

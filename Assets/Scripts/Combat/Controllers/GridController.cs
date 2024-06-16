@@ -1,3 +1,4 @@
+using Assets.Resources.ScriptableObjects;
 using Assets.Scripts.Combat.Events;
 using Assets.Scripts.Combat.Logic.AI.Actions;
 using Assets.Scripts.Combat.Logic.AI.Actions.Base;
@@ -6,14 +7,13 @@ using Assets.Scripts.Combat.Logic.Systems;
 using Assets.Scripts.Combat.UI;
 using Assets.Scripts.Loading;
 using Assets.Scripts.Shared.Data.Managers;
-using Assets.Scripts.Shared.Events;
-using Assets.Scripts.Shared.Logic.Character.Spells.Targeting;
 using Assets.Scripts.Shared.Data.State;
 using Assets.Scripts.Shared.Data.State.Combat;
+using Assets.Scripts.Shared.Events;
+using Assets.Scripts.Shared.Logic.Character.Spells.Targeting;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using Assets.Resources.ScriptableObjects;
 
 namespace Assets.Scripts.Combat.Controllers
 {

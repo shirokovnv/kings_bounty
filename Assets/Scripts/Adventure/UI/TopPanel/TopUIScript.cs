@@ -44,7 +44,7 @@ public class TopUIScript : MonoBehaviour
         var bonuses = TimeSystem.Instance().GetActiveBonuses();
 
         string text = System.String.Join(", ", bonuses.Select(b => b.Message()).ToArray());
-           
+
         if (text.Length > 0)
         {
             return text;

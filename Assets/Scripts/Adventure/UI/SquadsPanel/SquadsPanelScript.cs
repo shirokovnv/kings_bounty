@@ -4,7 +4,6 @@ using Assets.Scripts.Combat;
 using Assets.Scripts.Shared.Events;
 using Assets.Scripts.Shared.Logic.Character;
 using Assets.Scripts.Shared.Utility;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -57,7 +56,7 @@ public class SquadsPanelScript : MonoBehaviour
     {
         var squads = PlayerSquads.Instance().GetSquads();
         sprites.Clear();
- 
+
         for (int i = 0; i < squads.Count; i++)
         {
             currentFrame[i] = 0;
@@ -70,7 +69,7 @@ public class SquadsPanelScript : MonoBehaviour
 
         for (int i = 0; i < MAX_SQUADS; i++)
         {
-            var panelColor = (i >= squads.Count) 
+            var panelColor = (i >= squads.Count)
                 ? Colors.transparent
                 : GetPanelColor(squads[i].Unit.DwellingType);
 
@@ -79,7 +78,7 @@ public class SquadsPanelScript : MonoBehaviour
             Transform squadImage = slot.Find("SquadImage" + i);
 
             slot.GetComponent<Image>().color = Colors.transparent;
-            
+
             //squadImage.GetComponent<Image>().color = Colors.white;
 
             if (i < squads.Count)
@@ -92,19 +91,20 @@ public class SquadsPanelScript : MonoBehaviour
 
                 infoWrapper.Find("TextSlot1").GetComponent<Text>().text = info.Item1;
                 infoWrapper.Find("TextSlot2").GetComponent<Text>().text = info.Item2;
-            } else
+            }
+            else
             {
                 squadImage.gameObject.SetActive(false);
                 infoWrapper.gameObject.SetActive(false);
             }
-            
+
         }
-        
+
         gameObject.SetActive(true);
     }
 
     public void OnEvent(OnHideSquads e)
-    {  
+    {
         gameObject.SetActive(false);
     }
 

@@ -1,8 +1,8 @@
 using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Loading;
 using Assets.Scripts.Shared.Data.Managers;
-using Assets.Scripts.Shared.Logic.Character.Ranks;
 using Assets.Scripts.Shared.Data.State.MainMenu;
+using Assets.Scripts.Shared.Logic.Character.Ranks;
 using System;
 using System.Collections.Generic;
 using System.Linq;

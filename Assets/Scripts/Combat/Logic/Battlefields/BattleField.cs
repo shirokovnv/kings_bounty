@@ -172,7 +172,7 @@ abstract public class BattleField
             );
 
         DecisionChain chain = DecisionChainFactory.CreateByUnitType(outOfControlContext);
-        Queue<CombatAction> actions = new ();
+        Queue<CombatAction> actions = new();
         actions.Enqueue(new OutOfControl(nextUnit));
         chain.Traverse().ToList().ForEach(action => actions.Enqueue(action));
 

@@ -1,14 +1,14 @@
-using Assets.Scripts.Adventure.Logic.Systems;
+using Assets.Resources.ScriptableObjects;
 using Assets.Scripts.Adventure.Logic.Continents.Object.Biome;
+using Assets.Scripts.Adventure.Logic.Systems;
+using Assets.Scripts.Adventure.UI.Dialog;
 using Assets.Scripts.Shared.Data.Managers;
+using Assets.Scripts.Shared.Data.State.Adventure;
 using Assets.Scripts.Shared.Logic.Character;
 using Assets.Scripts.Shared.Logic.Character.Spells.Targeting;
-using Assets.Scripts.Shared.Data.State.Adventure;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using Assets.Scripts.Adventure.UI.Dialog;
-using Assets.Resources.ScriptableObjects;
 
 namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {

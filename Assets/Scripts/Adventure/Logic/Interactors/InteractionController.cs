@@ -1,11 +1,11 @@
+using Assets.Scripts.Adventure.Logic.Continents;
 using Assets.Scripts.Adventure.Logic.Interactors.Dialogs;
 using Assets.Scripts.Adventure.Logic.Interactors.Objects.Factory;
 using Assets.Scripts.Shared.Data.Managers;
-using Assets.Scripts.Shared.Logic.Character;
 using Assets.Scripts.Shared.Data.State;
 using Assets.Scripts.Shared.Data.State.Adventure;
+using Assets.Scripts.Shared.Logic.Character;
 using System.Collections.Generic;
-using Assets.Scripts.Adventure.Logic.Continents;
 
 namespace Assets.Scripts.Adventure.Logic.Interactors
 {

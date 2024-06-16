@@ -1,9 +1,9 @@
 using Assets.Scripts.Adventure.Events;
 using Assets.Scripts.Combat.Logic.Systems;
 using Assets.Scripts.Shared.Data.Managers;
+using Assets.Scripts.Shared.Data.State.Adventure;
 using Assets.Scripts.Shared.Events;
 using Assets.Scripts.Shared.Logic.Character;
-using Assets.Scripts.Shared.Data.State.Adventure;
 using UnityEngine;
 
 namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs

@@ -3,11 +3,11 @@ using Assets.Scripts.Adventure.Logic.Interactors;
 using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Loading;
 using Assets.Scripts.Shared.Data.Managers;
+using Assets.Scripts.Shared.Data.State.Adventure;
+using Assets.Scripts.Shared.Data.State.MainMenu;
 using Assets.Scripts.Shared.Events;
 using Assets.Scripts.Shared.Logic.Character;
 using Assets.Scripts.Shared.Logic.Systems;
-using Assets.Scripts.Shared.Data.State.Adventure;
-using Assets.Scripts.Shared.Data.State.MainMenu;
 using UnityEngine;
 
 namespace Assets.Scripts.Adventure.Controllers

@@ -1,5 +1,4 @@
 using Assets.Scripts.Combat;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,9 +9,9 @@ public class AdventureBattleField : BattleField
     private const int MAX_ITERATIONS_COUNT = 100;
 
     public AdventureBattleField(
-        int width, 
-        int height, 
-        List<UnitGroup> pList, 
+        int width,
+        int height,
+        List<UnitGroup> pList,
         List<UnitGroup> oList
         ) : base(width, height, pList, oList)
     {
@@ -30,7 +29,7 @@ public class AdventureBattleField : BattleField
             PList[i].X = 0;
             PList[i].Y = Height - i - 1;
         }
-        
+
         for (int j = 0; j < OList.Count; j++)
         {
             OList[j].X = Width - 1;

@@ -1,12 +1,11 @@
 using Assets.Scripts.Combat;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CastleBattleField : BattleField
 {
-    private readonly static List<Vector2Int> oPositions = new ()
-    { 
+    private readonly static List<Vector2Int> oPositions = new()
+    {
         new Vector2Int(1, 4),
         new Vector2Int(2, 4),
         new Vector2Int(3, 4),
@@ -33,9 +32,9 @@ public class CastleBattleField : BattleField
     };
 
     public CastleBattleField(
-        int width, 
-        int height, 
-        List<UnitGroup> pList, 
+        int width,
+        int height,
+        List<UnitGroup> pList,
         List<UnitGroup> oList) : base(width, height, pList, oList)
     {
     }
@@ -45,9 +44,9 @@ public class CastleBattleField : BattleField
         // bottom border
         for (int i = 0; i < Width; i++)
         {
-            Vector2Int position = new (i, 0);
+            Vector2Int position = new(i, 0);
 
-            if (! gatePositions.Contains(position))
+            if (!gatePositions.Contains(position))
             {
                 Grid.GetValue(i, 0).SetObstacle(true);
             }

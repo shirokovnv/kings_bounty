@@ -1,8 +1,8 @@
 using Assets.Scripts.Loading;
 using Assets.Scripts.Shared.Data.Managers;
-using Assets.Scripts.Shared.Logic.Character;
 using Assets.Scripts.Shared.Data.State;
 using Assets.Scripts.Shared.Data.State.Adventure;
+using Assets.Scripts.Shared.Logic.Character;
 using UnityEngine;
 using UnityEngine.UI;
 
