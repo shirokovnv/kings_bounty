@@ -39,8 +39,10 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
                 text += $"{ApproximateQuantity(group.CurrentQuantity())} {group.Unit.Name} \r\n";
             });
 
+            string laySiegeText = "Lay siege (Y/N) ?";
+
             BottomUIScript.Instance.ShowBottomUI();
-            BottomUIScript.Instance.ShowUIMessage(title, text);
+            BottomUIScript.Instance.ShowUIMessage(title, text, null, laySiegeText);
             BackgroundUIScript.Instance.ShowObjectBackground(castle);
 
             GameStateManager.Instance().SetState(
