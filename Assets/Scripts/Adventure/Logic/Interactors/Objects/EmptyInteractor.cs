@@ -1,7 +1,7 @@
 using Assets.Scripts.Shared.Data.Managers;
 using Assets.Scripts.Shared.Data.State.Adventure;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Objects
+namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
 {
     public class EmptyInteractor : BaseObjectInteractor
     {

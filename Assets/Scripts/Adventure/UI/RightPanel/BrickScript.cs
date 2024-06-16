@@ -1,4 +1,4 @@
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Puzzle;
+using Assets.Scripts.Adventure.Logic.Puzzle;
 using UnityEngine;
 using UnityEngine.UI;
 

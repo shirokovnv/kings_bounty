@@ -1,7 +1,7 @@
 using Assets.Scripts.Adventure.Events;
 using Assets.Scripts.Adventure.Logic.Continents;
 using Assets.Scripts.Adventure.Logic.Continents.Base;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Adventure.Logic.Continents.Object;
 using Assets.Scripts.Adventure.Logic.Continents.Object.Biome;
 using Assets.Scripts.Combat;

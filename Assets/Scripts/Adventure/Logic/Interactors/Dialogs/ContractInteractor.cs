@@ -1,11 +1,11 @@
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Adventure.UI.Dialog;
 using Assets.Scripts.Shared.Data.Managers;
 using Assets.Scripts.Shared.Data.State.Adventure;
 using Assets.Scripts.Shared.Utility;
 using UnityEngine;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Dialogs
+namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {
     public class ContractInteractor : BaseDialogInteractor<Adventuring, ViewContract>
     {

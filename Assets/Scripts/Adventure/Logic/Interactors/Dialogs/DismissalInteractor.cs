@@ -5,7 +5,7 @@ using System;
 using UnityEngine;
 using Assets.Scripts.Adventure.UI.Dialog;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Dialogs
+namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {
     public class DismissalInteractor : BaseDialogInteractor<Adventuring, ViewDismissal>
     {

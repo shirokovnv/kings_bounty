@@ -4,7 +4,7 @@ using Assets.Scripts.Shared.Data.State.Adventure;
 using UnityEngine;
 using Assets.Scripts.Adventure.UI.Dialog;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Dialogs
+namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {
     public class GreetingsInteractor : BaseDialogInteractor<ViewGreetings, DidViewGreetings>
     {

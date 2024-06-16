@@ -1,6 +1,6 @@
 using Assets.Scripts.Adventure.Events;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Interactors;
+using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Loading;
 using Assets.Scripts.Shared.Data.Managers;
 using Assets.Scripts.Shared.Events;

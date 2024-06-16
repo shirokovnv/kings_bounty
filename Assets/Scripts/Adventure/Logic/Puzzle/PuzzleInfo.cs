@@ -1,6 +1,6 @@
 using Assets.Scripts.Shared.Grid;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Puzzle
+namespace Assets.Scripts.Adventure.Logic.Puzzle
 {
     [System.Serializable]
     public class PuzzleInfo

@@ -6,7 +6,7 @@ using Assets.Scripts.Shared.Logic.Character;
 using Assets.Scripts.Shared.Data.State.Adventure;
 using UnityEngine;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Dialogs
+namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {
     public class SquadsInteractor : BaseDialogInteractor<Adventuring, ViewSquads>
     {

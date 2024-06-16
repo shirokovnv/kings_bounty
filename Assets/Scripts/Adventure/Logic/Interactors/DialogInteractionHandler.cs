@@ -1,7 +1,7 @@
 using Assets.Scripts.Shared.Data.State;
 using System.Collections.Generic;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors
+namespace Assets.Scripts.Adventure.Logic.Interactors
 {
     public class DialogInteractionHandler
     {

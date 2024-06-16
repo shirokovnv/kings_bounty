@@ -1,6 +1,6 @@
 using Assets.Scripts.Adventure.Logic.Accounting;
 using Assets.Scripts.Adventure.Logic.Continents.Base;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Adventure.Logic.Continents.Object;
 using Assets.Scripts.Shared.Data.Managers;
 using Assets.Scripts.Shared.Logic.Character;
@@ -11,7 +11,7 @@ using UnityEngine;
 using Assets.Scripts.Adventure.UI.Dialog;
 using Assets.Resources.ScriptableObjects;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Dialogs
+namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {
     public class WeekEndInteractor : BaseDialogInteractor<ViewWeekEnd, DidViewWeekEnd>
     {

@@ -1,4 +1,4 @@
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Puzzle;
+using Assets.Scripts.Adventure.Logic.Puzzle;
 using System;
 
 namespace Assets.Scripts.Adventure.Events

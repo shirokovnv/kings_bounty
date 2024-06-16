@@ -1,6 +1,6 @@
 using Assets.Scripts.Adventure.Logic.Continents.Base;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Objects.Factory
+namespace Assets.Scripts.Adventure.Logic.Interactors.Objects.Factory
 {
     public static class ObjectInteractionFactory
     {

@@ -1,6 +1,6 @@
 using Assets.Scripts.Adventure.Events;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Puzzle;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Puzzle;
+using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Adventure.Logic.Continents.Object;
 using Assets.Scripts.Adventure.Logic.Interactors.Objects.Picker;
 using Assets.Scripts.Shared.Data.Managers;
@@ -10,7 +10,7 @@ using Assets.Scripts.Shared.Data.State.Adventure;
 using UnityEngine;
 using Assets.Scripts.Adventure.UI.Dialog;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Objects
+namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
 {
     public class ArtifactInteractor : PassableObjectInteractor
     {

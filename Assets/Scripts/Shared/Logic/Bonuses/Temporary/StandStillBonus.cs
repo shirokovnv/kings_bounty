@@ -1,4 +1,4 @@
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Systems;
 
 namespace Assets.Scripts.Shared.Logic.Bonuses.Temporary
 {

@@ -1,4 +1,4 @@
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Objects
+namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
 {
     abstract public class BaseCombatableInteractor : BaseObjectInteractor
     {

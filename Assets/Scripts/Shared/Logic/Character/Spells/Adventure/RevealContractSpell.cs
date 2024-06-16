@@ -1,5 +1,5 @@
 using Assets.Scripts.Adventure.Logic.Bounties;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Adventure.UI.Dialog;
 using System.Linq;
 

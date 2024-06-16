@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems
+namespace Assets.Scripts.Adventure.Logic.Systems
 {
     [System.Serializable]
     public class ContinentSystem

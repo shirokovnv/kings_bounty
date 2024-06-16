@@ -1,5 +1,5 @@
 using Assets.Scripts.Adventure.Events;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Shared.Events;
 using Assets.Scripts.Shared.Logic.Character;
 using System.Linq;

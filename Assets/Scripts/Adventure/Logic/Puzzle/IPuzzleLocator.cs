@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Puzzle
+namespace Assets.Scripts.Adventure.Logic.Puzzle
 {
     public interface IPuzzleLocator
     {

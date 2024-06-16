@@ -1,7 +1,7 @@
 using Assets.Scripts.Adventure.Events;
 using Assets.Scripts.Adventure.Logic.Continents.Base;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Puzzle;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Puzzle;
+using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Adventure.Logic.Continents.Object;
 using Assets.Scripts.Combat.Logic.Systems;
 using Assets.Scripts.Shared.Data.Managers;
@@ -12,7 +12,7 @@ using Assets.Scripts.Shared.Data.State.Combat;
 using UnityEngine;
 using Assets.Scripts.Adventure.UI.Dialog;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Dialogs
+namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {
     public class SpoilsOfWarInteractor : BaseDialogInteractor<WinCombat, ViewSpoilsOfWar>
     {

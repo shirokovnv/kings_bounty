@@ -1,7 +1,7 @@
 using Assets.Scripts.Adventure.Events;
 using Assets.Scripts.Adventure.Logic.Continents;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Puzzle;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Puzzle;
+using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Combat;
 using Assets.Scripts.Shared.Data.Managers;
 using Assets.Scripts.Shared.Events;

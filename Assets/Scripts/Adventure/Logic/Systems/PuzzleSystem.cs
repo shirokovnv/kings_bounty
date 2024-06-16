@@ -1,11 +1,11 @@
 using Assets.Scripts.Adventure.Events;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Puzzle;
+using Assets.Scripts.Adventure.Logic.Puzzle;
 using Assets.Scripts.Shared.Events;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems
+namespace Assets.Scripts.Adventure.Logic.Systems
 {
     [System.Serializable]
     public class PuzzleSystem : ISerializationCallbackReceiver

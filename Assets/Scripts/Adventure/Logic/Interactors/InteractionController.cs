@@ -1,12 +1,13 @@
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Dialogs;
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Objects.Factory;
+using Assets.Scripts.Adventure.Logic.Interactors.Dialogs;
+using Assets.Scripts.Adventure.Logic.Interactors.Objects.Factory;
 using Assets.Scripts.Shared.Data.Managers;
 using Assets.Scripts.Shared.Logic.Character;
 using Assets.Scripts.Shared.Data.State;
 using Assets.Scripts.Shared.Data.State.Adventure;
 using System.Collections.Generic;
+using Assets.Scripts.Adventure.Logic.Continents;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors
+namespace Assets.Scripts.Adventure.Logic.Interactors
 {
     public class InteractionController : IInteractor<GameState>
     {

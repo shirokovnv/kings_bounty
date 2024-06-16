@@ -1,4 +1,4 @@
-using Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems;
+using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Loading;
 using Assets.Scripts.Shared.Data.Managers;
 using Assets.Scripts.Shared.Logic.Character.Ranks;

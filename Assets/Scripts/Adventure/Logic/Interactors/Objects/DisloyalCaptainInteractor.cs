@@ -8,7 +8,7 @@ using Assets.Scripts.Shared.Data.State.Combat;
 using UnityEngine;
 using Assets.Scripts.Adventure.UI.BottomPanel;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Objects
+namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
 {
     public class DisloyalCaptainInteractor : BaseCombatableInteractor
     {

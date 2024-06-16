@@ -1,6 +1,6 @@
 using Assets.Scripts.Shared.Data.State;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors
+namespace Assets.Scripts.Adventure.Logic.Interactors
 {
     public interface IInteractor<T> where T : GameState
     {

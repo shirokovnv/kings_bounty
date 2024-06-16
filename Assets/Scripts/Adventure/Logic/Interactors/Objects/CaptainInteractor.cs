@@ -2,7 +2,7 @@ using Assets.Scripts.Adventure.Logic.Continents.Object;
 using Assets.Scripts.Shared.Data.State.Adventure;
 using System.Collections.Generic;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Objects
+namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
 {
     public class CaptainInteractor : BaseObjectInteractor
     {

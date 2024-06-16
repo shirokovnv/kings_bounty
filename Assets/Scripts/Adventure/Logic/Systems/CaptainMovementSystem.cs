@@ -1,4 +1,5 @@
 using Assets.Scripts.Adventure.Events;
+using Assets.Scripts.Adventure.Logic.Continents;
 using Assets.Scripts.Adventure.Logic.Continents.Base;
 using Assets.Scripts.Adventure.Logic.Continents.Object;
 using Assets.Scripts.Shared.Events;
@@ -6,7 +7,7 @@ using Assets.Scripts.Shared.Utility;
 using System.Linq;
 using UnityEngine;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Systems
+namespace Assets.Scripts.Adventure.Logic.Systems
 {
     [System.Serializable]
     public class CaptainMovementSystem : ISerializationCallbackReceiver

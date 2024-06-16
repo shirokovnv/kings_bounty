@@ -8,7 +8,7 @@ using UnityEngine;
 using Assets.Scripts.Adventure.UI.Background;
 using Assets.Scripts.Adventure.UI.BottomPanel;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Objects
+namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
 {
     public class PlayerCastleInteractor : BaseObjectInteractor
     {

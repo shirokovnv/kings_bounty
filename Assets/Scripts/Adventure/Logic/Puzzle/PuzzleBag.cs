@@ -1,10 +1,11 @@
 using Assets.Scripts.Adventure.Logic.Bounties;
+using Assets.Scripts.Adventure.Logic.Continents;
 using Assets.Scripts.Adventure.Logic.Continents.Base;
 using Assets.Scripts.Adventure.Logic.Continents.Object;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Puzzle
+namespace Assets.Scripts.Adventure.Logic.Puzzle
 {
     public class PuzzleBag : IPuzzleBag
     {

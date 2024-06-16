@@ -1,6 +1,6 @@
 using Assets.Scripts.Shared.Data.State.Adventure;
 
-namespace Assets.Scripts.Adventure.Logic.Continents.Interactors.Objects
+namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
 {
     abstract public class BaseObjectInteractor : IInteractor<InteractingWithObject>
     {
