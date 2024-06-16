@@ -126,6 +126,11 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
             return squad != null || squads.Count < MAX_SQUADS;
         }
 
+        protected void AddSquad(UnitScriptableObject unit, int quantity, UnitGroup.UnitOwner owner)
+        {
+            squads.Add(new UnitGroup(unit, quantity, owner, 0, squads.Count));
+        }
+
         public void BuildGarrison(List<UnitScriptableObject> units, int strength)
         {
             RemoveAllSquads();
@@ -139,7 +144,7 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
                     quantity = 1;
                 }
 
-                AddOrRefillSquad(unit, quantity, UnitGroup.UnitOwner.opponent);
+                AddSquad(unit, quantity, UnitGroup.UnitOwner.opponent);
             }
         }
     }

@@ -37,9 +37,9 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
             return squads;
         }
 
-        public void AddGroup(UnitGroup group)
+        protected void AddSquad(UnitScriptableObject unit, int quantity)
         {
-            squads.Add(group);
+            squads.Add(new UnitGroup(unit, quantity, UnitGroup.UnitOwner.opponent, 0, squads.Count));
         }
 
         public static Captain CreateRandom(
@@ -79,9 +79,7 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
                     quantity = 1;
                 }
 
-                var unitGroup = new UnitGroup(unit, quantity, UnitGroup.UnitOwner.opponent, 5, i);
-
-                captain.AddGroup(unitGroup);
+                captain.AddSquad(unit, quantity);
             }
 
             return captain;
