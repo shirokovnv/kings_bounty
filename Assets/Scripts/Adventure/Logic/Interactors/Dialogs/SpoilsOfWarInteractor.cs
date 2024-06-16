@@ -47,6 +47,8 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 
                 if (castle.IsContracted())
                 {
+                    text += "\r\n";
+
                     var contract = ContractSystem.Instance().GetContractByCastlePosition(
                         castle.X, castle.Y, castle.ContinentNumber
                         );
