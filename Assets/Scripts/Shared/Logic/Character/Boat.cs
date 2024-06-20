@@ -23,7 +23,7 @@ namespace Assets.Scripts.Shared.Logic.Character
 
         public int GetTax()
         {
-            return IsActive ? 500 - Discount : 0;
+            return (IsActive || Player.Instance().IsNavigating()) ? 500 - Discount : 0;
         }
 
         public string GetTaxInfo()
