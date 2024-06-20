@@ -19,7 +19,9 @@ namespace Assets.Scripts.Adventure.Logic.Continents
 
         public readonly BaseObject GetObject()
         {
-            if (ObjectLayerStr == null) { return null; }
+            if (ObjectLayerStr == null || ObjectLayerStr == string.Empty) { return null; }
+
+            if (ObjectLayerType == null || ObjectLayerType == string.Empty) { return null; }
 
             if (!Enum.TryParse(ObjectLayerType, out ObjectType baseObjectType))
             {
