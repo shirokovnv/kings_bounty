@@ -57,6 +57,6 @@ public class TopUIScript : MonoBehaviour
 
         int daysLeft = TimeSystem.Instance().DaysLeft();
 
-        return $"{continentName}, \t Days Left: {daysLeft}, \t (O) - Options";
+        return $"{continentName}, \t Days Left: {daysLeft}, \t (H) - Help, \t (O) - Options";
     }
 }
