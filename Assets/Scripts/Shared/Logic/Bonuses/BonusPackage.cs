@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Shared.Logic.Bonuses.Modifiers;
 using Assets.Scripts.Shared.Logic.Bonuses.Temporary;
+using System;
 using UnityEngine;
 
 namespace Assets.Scripts.Shared.Logic.Bonuses
@@ -18,13 +19,21 @@ namespace Assets.Scripts.Shared.Logic.Bonuses
 
         public readonly Bonus GetBonus()
         {
-            return Type switch
+            if (!Enum.TryParse(Type, out BonusEnum bonusEnum))
             {
-                nameof(CharismaBonus) => JsonUtility.FromJson<CharismaBonus>(Content),
-                nameof(StandStillBonus) => JsonUtility.FromJson<StandStillBonus>(Content),
-                nameof(AttackModifier) => JsonUtility.FromJson<AttackModifier>(Content),
-                nameof(DefenceModifier) => JsonUtility.FromJson<DefenceModifier>(Content),
-                _ => throw new System.Exception("Unknown bonus type."),
+                throw new Exception("Unknown bonus.");
+            }
+
+            return bonusEnum switch
+            {
+                BonusEnum.CharismaBonus => JsonUtility.FromJson<CharismaBonus>(Content),
+                BonusEnum.StandStillBonus => JsonUtility.FromJson<StandStillBonus>(Content),
+                BonusEnum.WalkModeBonus => JsonUtility.FromJson<WalkModeBonus>(Content),
+
+                BonusEnum.AttackModifier => JsonUtility.FromJson<AttackModifier>(Content),
+                BonusEnum.DefenceModifier => JsonUtility.FromJson<DefenceModifier>(Content),
+                
+                _ => null,
             };
         }
     }

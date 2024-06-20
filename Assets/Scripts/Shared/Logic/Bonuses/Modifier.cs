@@ -1,3 +1,5 @@
+using Assets.Scripts.Shared.Logic.Bonuses.Modifiers;
+
 namespace Assets.Scripts.Shared.Logic.Bonuses
 {
     [System.Serializable]

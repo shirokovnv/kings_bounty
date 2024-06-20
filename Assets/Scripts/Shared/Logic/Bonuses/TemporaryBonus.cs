@@ -1,4 +1,5 @@
 using Assets.Scripts.Combat.Interfaces;
+using Assets.Scripts.Shared.Logic.Bonuses.Temporary;
 using UnityEngine;
 
 namespace Assets.Scripts.Shared.Logic.Bonuses
@@ -56,6 +57,6 @@ namespace Assets.Scripts.Shared.Logic.Bonuses
 
         abstract protected void Commit();
         abstract protected void Rollback();
-        public abstract string Message();
+        abstract public string Message();
     }
 }

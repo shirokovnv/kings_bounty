@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Adventure.Logic.Continents.Base;
 using Assets.Scripts.Adventure.Logic.Continents.Object;
+using System;
 using UnityEngine;
 
 namespace Assets.Scripts.Adventure.Logic.Continents
@@ -13,23 +14,28 @@ namespace Assets.Scripts.Adventure.Logic.Continents
         public ObjectPackage(BaseObject obj)
         {
             ObjectLayerStr = JsonUtility.ToJson(obj);
-            ObjectLayerType = obj?.GetType().ToString();
+            ObjectLayerType = obj?.GetObjectType().ToString();
         }
 
         public readonly BaseObject GetObject()
         {
             if (ObjectLayerStr == null) { return null; }
 
-            return ObjectLayerType switch
+            if (!Enum.TryParse(ObjectLayerType, out ObjectType baseObjectType))
             {
-                nameof(Chest) => JsonUtility.FromJson<Chest>(ObjectLayerStr),
-                nameof(Dwelling) => JsonUtility.FromJson<Dwelling>(ObjectLayerStr),
-                nameof(Artifact) => JsonUtility.FromJson<Artifact>(ObjectLayerStr),
-                nameof(Captain) => JsonUtility.FromJson<Captain>(ObjectLayerStr),
-                nameof(Castle) => JsonUtility.FromJson<Castle>(ObjectLayerStr),
-                nameof(CastleWall) => JsonUtility.FromJson<CastleWall>(ObjectLayerStr),
-                nameof(Sign) => JsonUtility.FromJson<Sign>(ObjectLayerStr),
-                nameof(City) => JsonUtility.FromJson<City>(ObjectLayerStr),
+                throw new Exception("Unknown object type.");
+            }
+
+            return baseObjectType switch
+            {
+                ObjectType.chest => JsonUtility.FromJson<Chest>(ObjectLayerStr),
+                ObjectType.dwelling => JsonUtility.FromJson<Dwelling>(ObjectLayerStr),
+                ObjectType.artifact => JsonUtility.FromJson<Artifact>(ObjectLayerStr),
+                ObjectType.captain => JsonUtility.FromJson<Captain>(ObjectLayerStr),
+                ObjectType.castleGate => JsonUtility.FromJson<Castle>(ObjectLayerStr),
+                ObjectType.castleWall => JsonUtility.FromJson<CastleWall>(ObjectLayerStr),
+                ObjectType.sign => JsonUtility.FromJson<Sign>(ObjectLayerStr),
+                ObjectType.city => JsonUtility.FromJson<City>(ObjectLayerStr),
                 _ => null,
             };
         }

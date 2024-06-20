@@ -28,7 +28,7 @@ namespace Assets.Scripts.MainMenu
 
             savedGames.Clear();
 
-            var savedFiles = System.IO.Directory.GetFiles(FileSystem.SAVE_DIR, "*.txt");
+            var savedFiles = FileSystem.GetSavedFiles();
 
             foreach (var savedFile in savedFiles)
             {

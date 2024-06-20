@@ -8,6 +8,11 @@ namespace Assets.Scripts.Shared.Logic.Bonuses.Temporary
         {
         }
 
+        public override BonusEnum GetBonusEnumValue()
+        {
+            return BonusEnum.WalkModeBonus;
+        }
+
         public override string Message()
         {
             return $"LEVITATION : {duration}";

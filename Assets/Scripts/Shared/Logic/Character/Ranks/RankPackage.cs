@@ -1,4 +1,6 @@
-﻿namespace Assets.Scripts.Shared.Logic.Character.Ranks
+﻿using System;
+
+namespace Assets.Scripts.Shared.Logic.Character.Ranks
 {
     [System.Serializable]
     public struct RankPackage
@@ -6,12 +8,20 @@
         public string BaseType;
         public int PromotedTimes;
 
-        public readonly Rank GetRank() => BaseType switch
+        public readonly Rank GetRank()
         {
-            nameof(Knight) => new Knight(),
-            nameof(Sorceress) => new Sorceress(),
-            nameof(Ranger) => new Ranger(),
-            _ => throw new System.Exception("Unknown Rank."),
-        };
+            if (!Enum.TryParse(BaseType, out BaseRank baseRank))
+            {
+                throw new Exception("Unknown player rank.");
+            }
+
+            return baseRank switch
+            {
+                BaseRank.Knight => new Knight(),
+                BaseRank.Ranger => new Ranger(),
+                BaseRank.Sorceress => new Sorceress(),
+                _ => null,
+            };
+        }
     }
 }

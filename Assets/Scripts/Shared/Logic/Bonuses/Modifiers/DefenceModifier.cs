@@ -12,6 +12,11 @@ namespace Assets.Scripts.Shared.Logic.Bonuses.Modifiers
             this.value = value;
         }
 
+        public override BonusEnum GetBonusEnumValue()
+        {
+            return BonusEnum.DefenceModifier;
+        }
+
         public override float GetValue()
         {
             return value;

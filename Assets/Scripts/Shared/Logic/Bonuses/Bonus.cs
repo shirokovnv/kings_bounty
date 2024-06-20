@@ -13,5 +13,7 @@ namespace Assets.Scripts.Shared.Logic.Bonuses
         }
 
         public bool IsStackable() { return isStackable; }
+
+        abstract public BonusEnum GetBonusEnumValue();
     }
 }

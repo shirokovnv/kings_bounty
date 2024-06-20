@@ -81,7 +81,7 @@ namespace Assets.Scripts.Adventure.Controllers
                     {
                         GameStateManager.Instance().SetState(new LoadGame
                         {
-                            FileName = FileSystem.SAVE_DIR + $"{Player.Instance().GetName()}.txt"
+                            FileName = FileSystem.SAVE_DIR + $"{Player.Instance().GetName()}.{FileSystem.SAVE_EXTENSION}"
                         });
 
                         SceneLoader.Load(SceneLoader.Scene.AdventureScene);

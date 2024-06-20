@@ -22,5 +22,7 @@ namespace Assets.Scripts.Shared.Logic.Character.Ranks
 
             return promotions;
         }
+
+        abstract public BaseRank GetBaseRank();
     }
 }

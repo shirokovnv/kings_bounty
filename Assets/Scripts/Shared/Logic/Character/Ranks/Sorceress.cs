@@ -28,6 +28,11 @@ namespace Assets.Scripts.Shared.Logic.Character.Ranks
             return 60;
         }
 
+        public override BaseRank GetBaseRank()
+        {
+            return BaseRank.Sorceress;
+        }
+
         public override int GetBaseSpellPower()
         {
             return 3;

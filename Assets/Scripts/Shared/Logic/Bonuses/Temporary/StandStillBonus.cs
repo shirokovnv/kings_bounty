@@ -9,6 +9,11 @@ namespace Assets.Scripts.Shared.Logic.Bonuses.Temporary
         {
         }
 
+        public override BonusEnum GetBonusEnumValue()
+        {
+            return BonusEnum.StandStillBonus;
+        }
+
         public override string Message()
         {
             return $"STILL MODE : {duration}";

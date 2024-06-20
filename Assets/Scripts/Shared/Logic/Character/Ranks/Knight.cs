@@ -28,6 +28,11 @@ namespace Assets.Scripts.Shared.Logic.Character.Ranks
             return 100;
         }
 
+        public override BaseRank GetBaseRank()
+        {
+            return BaseRank.Knight;
+        }
+
         public override int GetBaseSpellPower()
         {
             return 1;

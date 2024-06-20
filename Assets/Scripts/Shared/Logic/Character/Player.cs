@@ -122,7 +122,7 @@ namespace Assets.Scripts.Shared.Logic.Character
         {
             rankPackage = new RankPackage
             {
-                BaseType = rank.GetType().ToString(),
+                BaseType = rank.GetBaseRank().ToString(),
                 PromotedTimes = rank.GetPromotions().PromotedTimes()
             };
         }

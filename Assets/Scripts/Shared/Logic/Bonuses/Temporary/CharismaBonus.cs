@@ -14,6 +14,11 @@ namespace Assets.Scripts.Shared.Logic.Bonuses.Temporary
             this.bonus = bonus;
         }
 
+        public override BonusEnum GetBonusEnumValue()
+        {
+            return BonusEnum.CharismaBonus;
+        }
+
         public override string Message()
         {
             return $"CHARISMA ({bonus}): {duration}";
