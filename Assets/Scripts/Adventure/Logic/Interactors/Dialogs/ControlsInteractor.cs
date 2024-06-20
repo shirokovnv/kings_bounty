@@ -20,6 +20,7 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
         "A: view army",
         "C: controls",
         "D: dismiss",
+        "H: help",
         "I: view contract",
         "L: load",
         "M: show map",

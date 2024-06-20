@@ -16,6 +16,7 @@ namespace Assets.Scripts.Adventure.Logic.Interactors
         private static readonly List<IDialogInteractor> dialogInteractors = new()
         {
                 new GreetingsInteractor(),
+                new HelpInteractor(),
                 new InventoryInteractor(),
                 new SpellBookInteractor(),
                 new CastSpellInteractor(),
