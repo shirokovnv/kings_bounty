@@ -130,6 +130,11 @@ namespace Assets.Scripts.Combat
             CurrentShoots = Unit.NumShoots;
         }
 
+        public void ResetInitialQuantity()
+        {
+            InitialQuantity = CurrentQuantity();
+        }
+
         public int GetTax()
         {
             return Unit.Cost * CurrentQuantity() / WEEK_COST_PENALTY;

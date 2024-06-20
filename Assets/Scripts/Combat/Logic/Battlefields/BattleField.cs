@@ -104,6 +104,7 @@ abstract public class BattleField
             if (isFirstTurn)
             {
                 unit.ResetShoots();
+                unit.ResetInitialQuantity();
             }
         });
 
