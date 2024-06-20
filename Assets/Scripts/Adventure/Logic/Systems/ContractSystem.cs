@@ -71,6 +71,11 @@ namespace Assets.Scripts.Adventure.Logic.Systems
             return contracts[currentContractIndex];
         }
 
+        public void ClearContract()
+        {
+            currentContractIndex = -1;
+        }
+
         public Contract GetContractByID(int id)
         {
             return contracts.Where(contract => contract.ContractInfo().GetScriptID() == id).FirstOrDefault();

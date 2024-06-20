@@ -71,6 +71,7 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
                                 );
 
                             EventBus.Instance.PostEvent(new OnNewContract { Contract = null });
+                            ContractSystem.Instance().ClearContract();
                         }
                         else
                         {
