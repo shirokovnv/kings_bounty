@@ -73,6 +73,10 @@ namespace Assets.Scripts.Combat.Controllers.Resolvers
                     AttackAnimationController.Instance.BeginAnimation(combatAction as CounterAttack);
                     break;
 
+                case Pass:
+                    gridTilePrefab.BeginAnimation(unitGroup.Unit.Sprites);
+                    break;
+
                 case Teleport:
                     gridTilePrefab.SetAnimatedSprites(unitGroup.Unit.Sprites);
                     break;
@@ -127,6 +131,10 @@ namespace Assets.Scripts.Combat.Controllers.Resolvers
                     position *= scale;
 
                     gridTilePrefab.SetSpritePosition(position);
+                    break;
+
+                case Pass:
+                    gridTilePrefab.EndAnimation();
                     break;
             }
 
