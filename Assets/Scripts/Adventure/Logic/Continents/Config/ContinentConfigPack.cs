@@ -34,8 +34,8 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Config
             config.GetObjectConfig().SetMinChestStrength(100);
             config.GetObjectConfig().SetMaxChestStrength(500);
 
-            config.GetObjectConfig().SetMinCaptainStrength(50);
-            config.GetObjectConfig().SetMaxCaptainStrength(200);
+            config.GetObjectConfig().SetMinCaptainStrength(25);
+            config.GetObjectConfig().SetMaxCaptainStrength(150);
 
             config.GetObjectConfig().SetCastleStrengthBonus(50);
 
@@ -95,7 +95,7 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Config
             config.GetObjectConfig().SetMaxDwellingCreatureLevel(4);
 
             config.GetObjectConfig().SetMinChestStrength(500);
-            config.GetObjectConfig().SetMaxChestStrength(1500);
+            config.GetObjectConfig().SetMaxChestStrength(2000);
 
             config.GetObjectConfig().SetMinCaptainStrength(250);
             config.GetObjectConfig().SetMaxCaptainStrength(1000);
