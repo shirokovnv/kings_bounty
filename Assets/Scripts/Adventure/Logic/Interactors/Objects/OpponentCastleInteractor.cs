@@ -26,6 +26,11 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
                     castle.X, castle.Y, castle.ContinentNumber
                     );
 
+                contract.SetCastle(castle.GetName());
+                contract.SetLastSeen(
+                    ContinentSystem.Instance().GetContinentAtNumber(castle.ContinentNumber).GetName() 
+                );
+                
                 title += $"{contract.ContractInfo().Title}";
             }
             else
