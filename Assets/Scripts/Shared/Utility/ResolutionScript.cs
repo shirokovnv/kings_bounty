@@ -9,7 +9,12 @@ namespace Assets.Scripts.Shared.Utility
 
         private void Awake()
         {
-            Screen.SetResolution(newResolutionWidth, newResolutionHeight, false);
+            DontDestroyOnLoad(gameObject);
+
+            if (Screen.width != newResolutionWidth && Screen.height != newResolutionHeight)
+            {
+                Screen.SetResolution(newResolutionWidth, newResolutionHeight, false);
+            }
         }
     }
 }

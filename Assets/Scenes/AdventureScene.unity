@@ -3886,52 +3886,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites: []
---- !u!1 &1670263380
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1670263382}
-  - component: {fileID: 1670263381}
-  m_Layer: 0
-  m_Name: ResolutionChanger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1670263381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670263380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cdfc3ea1954e4a47a64c70672d7c445, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newResolutionWidth: 800
-  newResolutionHeight: 600
---- !u!4 &1670263382
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670263380}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 835.7622, y: 428.59402, z: 3.0555406}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1686920636
 GameObject:
   m_ObjectHideFlags: 0
@@ -5325,6 +5279,5 @@ SceneRoots:
   - {fileID: 1043512445}
   - {fileID: 1500854880}
   - {fileID: 143748592}
-  - {fileID: 1670263382}
   - {fileID: 1346733499}
   - {fileID: 1028638218}
