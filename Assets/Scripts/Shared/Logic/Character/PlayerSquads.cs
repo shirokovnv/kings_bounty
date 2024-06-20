@@ -80,7 +80,7 @@ namespace Assets.Scripts.Shared.Logic.Character
 
             squads.ForEach(s =>
             {
-                s.DamageReductionCoefficient = s.DamageReductionCoefficient = 0;
+                s.DamageAmplificationCoefficient = s.DamageReductionCoefficient = 0;
 
                 attackModifiers.ForEach(m => s.DamageAmplificationCoefficient += m.GetValue());
                 defenceModifiers.ForEach(m => s.DamageReductionCoefficient += m.GetValue());
