@@ -188,8 +188,6 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Builder
 
                 int islandLength = Mathf.FloorToInt(maxLength * (1.0f - error));
 
-                Debug.Log("ISLAND LENGTH: " + islandLength);
-
                 for (int l = 0; l < islandLength; l++)
                 {
                     grid.GetValue(x, y).SetBiome(BiomeType.grass);

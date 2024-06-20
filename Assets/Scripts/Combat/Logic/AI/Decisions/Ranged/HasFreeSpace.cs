@@ -28,8 +28,6 @@ namespace Assets.Scripts.Combat.Logic.AI.Decisions.Ranged
                 text += "(" + node.X + "," + node.Y + ") ";
             }
 
-            Debug.Log("Fallback path (" + data.PGroup.Unit.Name + "): " + text);
-
             return path.Count > 0;
         }
 

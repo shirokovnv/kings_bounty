@@ -116,8 +116,6 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 
             emptyCastles.ForEach(castle =>
             {
-                Debug.Log(castle.GetName());
-
                 var strengthBonus = ContinentSystem
                     .Instance()
                     .GetContinentAtNumber(castle.ContinentNumber)

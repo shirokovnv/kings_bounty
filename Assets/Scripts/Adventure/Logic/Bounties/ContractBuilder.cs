@@ -39,8 +39,6 @@ namespace Assets.Scripts.Adventure.Logic.Bounties
                 .ThenBy(contract => contract.Reward())
                 .ToList();
 
-            Debug.Log("CONTRACTS (" + contracts.Count + "):");
-
             foreach (var contract in contracts)
             {
                 Debug.Log(

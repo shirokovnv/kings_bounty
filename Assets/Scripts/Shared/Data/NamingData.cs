@@ -119,8 +119,6 @@ namespace Assets.Scripts.Shared.Data
                 .Select(kvp => kvp.Key)
                 .FirstOrDefault();
 
-            Debug.Log("Cas name:" + castleName);
-
             usedCastleNames[castleName] = true;
 
             return castleName;

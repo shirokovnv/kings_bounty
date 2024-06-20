@@ -219,8 +219,6 @@ namespace Assets.Scripts.Combat.Controllers
                 ? pUnitImages
                 : oUnitImages;
 
-            Debug.Log("fab: " + images[actionWrapper.Unit]);
-
             controller.PlayAnimationSequence(actionWrapper);
             controller.SetPrefab(images[actionWrapper.Unit]);
         }

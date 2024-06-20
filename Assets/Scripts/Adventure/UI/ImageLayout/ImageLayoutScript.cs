@@ -21,14 +21,6 @@ namespace Assets.Scripts.Adventure.UI.ImageLayout
             gameObject.SetActive(false);
         }
 
-        // Start is called before the first frame update
-        void Start()
-        {
-            Debug.Log("Screen: " + Screen.width);
-            Debug.Log(transform.position);
-            //transform.position = new Vector3(- (Screen.width / 4), -30, 0);
-        }
-
         // Update is called once per frame
         void Update()
         {

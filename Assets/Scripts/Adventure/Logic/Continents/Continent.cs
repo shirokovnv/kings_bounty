@@ -12,6 +12,8 @@ namespace Assets.Scripts.Adventure.Logic.Continents
     [System.Serializable]
     public class Continent : NamedObject, ISerializationCallbackReceiver
     {
+        private const int START_X = 3, START_Y = 3;
+
         [SerializeField] private TileGrid<ContinentTile> grid;
         [SerializeField] private ContinentConfig config;
         [SerializeField] private bool isRevealed;
@@ -78,7 +80,6 @@ namespace Assets.Scripts.Adventure.Logic.Continents
             return objects;
         }
 
-        // TODO: refactor
         public Vector2Int GetStartPosition()
         {
             var kingsCastle = castles.Where(castle => castle.GetOwner() == CastleOwner.king).FirstOrDefault();
@@ -88,7 +89,7 @@ namespace Assets.Scripts.Adventure.Logic.Continents
                 return new Vector2Int(kingsCastle.X, kingsCastle.Y - 1);
             }
 
-            return new Vector2Int(0, 0);
+            return new Vector2Int(START_X, START_Y);
         }
 
         private void InspectContinent()
