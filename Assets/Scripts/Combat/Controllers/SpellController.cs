@@ -113,7 +113,7 @@ namespace Assets.Scripts.Combat.Controllers
                 CursorController.Instance.Deactivate();
                 EventBus.Instance.PostEvent(new OnHideSpellbook());
                 CombatConsoleScript.Instance.PushMessage(
-                    $"Spell {spellTarget.Source} deactivated."
+                    $"Spell {spellTarget.Source.Name} deactivated."
                     );
             }
 
@@ -267,7 +267,7 @@ namespace Assets.Scripts.Combat.Controllers
                 spellTarget.Target = battleField.PList.Where(o => o.X == X && o.Y == Y).FirstOrDefault();
 
                 if (spellTarget.Source.Name == "Resurrect" &&
-                    spellTarget.Target.InitialQuantity >= spellTarget.Target.CurrentQuantity())
+                    spellTarget.Target.InitialQuantity < spellTarget.Target.CurrentQuantity())
                 {
                     return false;
                 }
