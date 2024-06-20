@@ -8,6 +8,9 @@ namespace Assets.Scripts.Shared.Logic.Systems
     {
         public static readonly string SAVE_DIR = Application.dataPath + "/Saves/";
 
+        public const string SAVE_EXTENSION = "sav";
+
+
         public static void Save()
         {
             var saveFileInfo = new SaveFileInfo();
@@ -19,7 +22,7 @@ namespace Assets.Scripts.Shared.Logic.Systems
                 Directory.CreateDirectory(SAVE_DIR);
             }
 
-            File.WriteAllBytes(SAVE_DIR + $"{Player.Instance().GetName()}.txt", FileCompressor.Zip(str));
+            File.WriteAllBytes(SAVE_DIR + $"{Player.Instance().GetName()}.{SAVE_EXTENSION}", FileCompressor.Zip(str));
 
             Debug.Log("SAVED!");
         }
@@ -36,6 +39,11 @@ namespace Assets.Scripts.Shared.Logic.Systems
             }
 
             return false;
+        }
+
+        public static bool Exists(string path)
+        {
+            return File.Exists(path); 
         }
     }
 }

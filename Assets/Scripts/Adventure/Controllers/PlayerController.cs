@@ -75,14 +75,23 @@ namespace Assets.Scripts.Adventure.Controllers
 
                 if (Input.GetKeyDown(KeyCode.L))
                 {
-                    GameStateManager.Instance().SetState(new LoadGame
+                    var path = FileSystem.SAVE_DIR + $"{Player.Instance().GetName()}.{FileSystem.SAVE_EXTENSION}";
+
+                    if (FileSystem.Exists(path))
                     {
-                        FileName = FileSystem.SAVE_DIR + $"{Player.Instance().GetName()}.txt"
-                    });
+                        GameStateManager.Instance().SetState(new LoadGame
+                        {
+                            FileName = FileSystem.SAVE_DIR + $"{Player.Instance().GetName()}.txt"
+                        });
 
-                    SceneLoader.Load(SceneLoader.Scene.AdventureScene);
+                        SceneLoader.Load(SceneLoader.Scene.AdventureScene);
 
-                    return;
+                        TopUIScript.Instance.UpdateTextMessage("Game loaded!");
+
+                        return;
+                    }
+
+                    TopUIScript.Instance.UpdateTextMessage($"File {path} does not exist.");
                 }
             }
         }
