@@ -198,7 +198,7 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
             }
             else
             {
-                text += "- Hurry and recover my Scepter of Order or all will be lost!";
+                text += "- Hurry and recover The Grail or all will be lost!";
             }
 
             if (Input.GetKeyDown(KeyCode.Escape))
