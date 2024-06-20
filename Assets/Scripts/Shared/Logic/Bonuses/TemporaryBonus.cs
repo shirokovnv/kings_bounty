@@ -1,5 +1,4 @@
 using Assets.Scripts.Combat.Interfaces;
-using Assets.Scripts.Shared.Logic.Bonuses.Temporary;
 using UnityEngine;
 
 namespace Assets.Scripts.Shared.Logic.Bonuses
