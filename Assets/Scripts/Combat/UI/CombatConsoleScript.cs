@@ -29,14 +29,17 @@ namespace Assets.Scripts.Combat.UI
             SetToggleButtonText();
         }
 
+        private void Start()
+        {
+            scrollView.SetActive(showConsole);
+            CalculateToggleButtonPosition();
+        }
+
         public void OnToggleButtonClick()
         {
-            toggleButton.transform.position = showConsole
-                ? new Vector3(0, 0, 0)
-                : new Vector3(0, consoleHeight, 0);
-
             showConsole = !showConsole;
 
+            CalculateToggleButtonPosition();
             SetToggleButtonText();
 
             scrollView.SetActive(showConsole);
@@ -76,6 +79,13 @@ namespace Assets.Scripts.Combat.UI
                 : "(O) Open";
 
             toggleButton.GetComponentInChildren<Text>().text = toggleText;
+        }
+
+        private void CalculateToggleButtonPosition()
+        {
+            toggleButton.transform.position = showConsole
+                ? new Vector3(0, consoleHeight, 0)
+                : new Vector3(0, 0, 0);
         }
     }
 }

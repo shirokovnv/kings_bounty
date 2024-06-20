@@ -1558,7 +1558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd60cd7bef5f66409e32d79ea300c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showConsole: 1
+  showConsole: 0
   consoleHeight: 200
   toggleButton: {fileID: 669662784}
   scrollView: {fileID: 1922380609}
