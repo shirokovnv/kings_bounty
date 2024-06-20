@@ -313,8 +313,8 @@ namespace Assets.Scripts.Combat.Controllers
                 oUnitImages.Add(oUnit, tile);
             });
 
-            battleField.PrepareForTheNextTurn(UnitGroup.UnitOwner.player);
-            battleField.PrepareForTheNextTurn(UnitGroup.UnitOwner.opponent);
+            battleField.PrepareForTheNextTurn(UnitGroup.UnitOwner.player, true);
+            battleField.PrepareForTheNextTurn(UnitGroup.UnitOwner.opponent, true);
 
             MoraleSystem.Instance().CalculateMorale(battleField.PList);
             MoraleSystem.Instance().CalculateMorale(battleField.OList);

@@ -90,7 +90,7 @@ abstract public class BattleField
         return false;
     }
 
-    public void PrepareForTheNextTurn(UnitGroup.UnitOwner owner)
+    public void PrepareForTheNextTurn(UnitGroup.UnitOwner owner, bool isFirstTurn = false)
     {
         CanCastSpells = true;
 
@@ -100,6 +100,11 @@ abstract public class BattleField
         {
             unit.ResetMovement();
             unit.ResetCounterstrikes();
+
+            if (isFirstTurn)
+            {
+                unit.ResetShoots();
+            }
         });
 
         Context.PGroupIndex = 0;
