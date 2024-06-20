@@ -9,10 +9,13 @@ namespace Assets.Scripts.Adventure.Controllers
     {
         private void Awake()
         {
+            EventBus.Instance.Register(this);
+        }
+
+        private void Start()
+        {
             gameObject.SetActive(Boat.Instance().IsActive);
             gameObject.transform.position = new Vector3(Boat.Instance().X, Boat.Instance().Y);
-
-            EventBus.Instance.Register(this);
         }
 
         public void OnEvent(OnBuyBoat e)
