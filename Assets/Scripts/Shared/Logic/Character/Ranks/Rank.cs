@@ -23,6 +23,13 @@ namespace Assets.Scripts.Shared.Logic.Character.Ranks
             return promotions;
         }
 
+        public string GetFullRankName()
+        {
+            return GetPromotions()
+                .CurrentPromotion()
+                .GetPromotionName() ?? GetRankName();
+        }
+
         abstract public BaseRank GetBaseRank();
     }
 }

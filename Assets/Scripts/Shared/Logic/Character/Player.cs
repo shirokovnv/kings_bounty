@@ -54,7 +54,7 @@ namespace Assets.Scripts.Shared.Logic.Character
 
         public string GetFullTitle()
         {
-            return $"{GetName()} The {GetRank().GetRankName()}";
+            return $"{GetName()} The {GetRank().GetFullRankName()}";
         }
 
         public void SetRank(Rank rank)
