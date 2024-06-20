@@ -7,9 +7,9 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {
     public class HelpInteractor : BaseDialogInteractor<Adventuring, ViewHelp>
     {
-        private static string TITLE = "----- HELP -----";
+        private readonly static string TITLE = "----- HELP -----";
 
-        private static string[] TEXT =
+        private readonly static string[] TEXT =
         {
             "The game is a remake of original 1990 Kings bounty.",
             "The main goal is to find Legendary Artifact in time.",
