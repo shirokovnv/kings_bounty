@@ -25,9 +25,14 @@ namespace Assets.Scripts.Shared.Logic.Character.Ranks
 
         public string GetFullRankName()
         {
-            return GetPromotions()
-                .CurrentPromotion()
-                .GetPromotionName() ?? GetRankName();
+            var currentPromotion = GetPromotions().CurrentPromotion();
+
+            if (currentPromotion != null)
+            {
+                return currentPromotion.GetPromotionName();
+            }
+
+            return GetRankName();
         }
 
         abstract public BaseRank GetBaseRank();
