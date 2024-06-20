@@ -1,5 +1,6 @@
 using Assets.Scripts.Adventure.Logic.Continents;
 using Assets.Scripts.Adventure.Logic.Continents.Base;
+using Assets.Scripts.Adventure.Logic.Continents.Object;
 using Assets.Scripts.Adventure.Logic.Continents.Object.Biome;
 using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Adventure.UI.Dialog;
@@ -7,6 +8,7 @@ using Assets.Scripts.Shared.Data.Managers;
 using Assets.Scripts.Shared.Data.State.Adventure;
 using Assets.Scripts.Shared.Logic.Character;
 using Assets.Scripts.Shared.Utility;
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
@@ -19,6 +21,7 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
         private static readonly Texture2D texture = new(SIZE, SIZE, TextureFormat.ARGB32, false);
         private static float dtime = 0;
         private static bool fullMode;
+        private static CastleOwner[] nonPlayerOwners = { CastleOwner.opponent, CastleOwner.king};
 
         public override void WaitForStart()
         {
@@ -125,10 +128,23 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 
             if (tile.ObjectLayer != null)
             {
+                // check castle wall
+                if (tile.ObjectLayer.GetObjectType() == ObjectType.castleWall)
+                {
+                    Continent continent = ContinentSystem.Instance().GetContinentAtNumber(continentNumber);
+                    Castle castle = continent.GetCastleWithWallPosition(x, y);
+
+                    if (castle != null)
+                    {
+                        return GetCastleWallColorBasedOn(castle.GetOwner());
+                    }
+
+                    return Colors.white;
+                }
+
                 return tile.ObjectLayer.GetObjectType() switch
                 {
                     ObjectType.city => Colors.orchid,
-                    ObjectType.castleWall => Colors.white,
                     ObjectType.castleGate => Colors.black,
                     ObjectType.chest => Colors.magentauchsia,
                     ObjectType.sign => Colors.lightgray,
@@ -148,6 +164,13 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
                 BiomeType.desert => Colors.yellow,
                 _ => Colors.black
             };
+        }
+
+        private static Color32 GetCastleWallColorBasedOn(CastleOwner owner)
+        {
+            return nonPlayerOwners.Contains(owner)
+                ? Colors.white
+                : Colors.wheat;
         }
 
         private static Color32 FlickeringPixel()

@@ -219,6 +219,15 @@ namespace Assets.Scripts.Adventure.Logic.Continents
             }
         }
 
+        public Castle GetCastleWithWallPosition(int x, int y)
+        {
+            var rect = GetTileRectWithPositions(x, y, 1, 1);
+            return rect
+                .Where(r => r.Tile.HasObject(ObjectType.castleGate))
+                .Select(r => (r.Tile.ObjectLayer as Castle))
+                .FirstOrDefault();
+        }
+
         public void OnBeforeSerialize()
         {
         }
