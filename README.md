@@ -12,6 +12,11 @@ Unlike the original, the game has a procedural generation.
 
 Other mechanics basically repeat the original: exploring the world, turn-based battles, collecting and using magic spells and more.
 
+## Requirements
+
+- Unity 2022.3.23f1
+- C# 9.0
+
 ## Screenshots
 
 ![screenshot_1](/Assets/Resources/Sprites/Screenshots/screenshot_1.png)
@@ -26,4 +31,4 @@ Other mechanics basically repeat the original: exploring the world, turn-based b
 
 MIT. Please see the [license file](LICENSE) for more information.
 
-**All original images belongs to New World Computing**
+**All original images belongs to New World Computing.**
