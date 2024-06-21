@@ -15,23 +15,28 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {
     public class WeekEndInteractor : BaseDialogInteractor<ViewWeekEnd, DidViewWeekEnd>
     {
+        public delegate UnitScriptableObject NextActivatedUnit();
+        public static NextActivatedUnit Activator;
+
         private readonly static List<ITaxable> taxables = new()
-    {
-        PlayerSquads.Instance(),
-        Boat.Instance(),
-    };
+        {
+            PlayerSquads.Instance(),
+            Boat.Instance(),
+        };
 
         public override void WaitForStart()
         {
-            ViewWeekEnd state = GameStateManager.Instance().GetState() as ViewWeekEnd;
+            ViewWeekEnd state = GameStateManager.Instance().GetState() as ViewWeekEnd;             
 
-            var randomUnit = UnitManager.Instance().GetRandomUnitExceptType(Dwelling.DwellingType.castle);
+            Activator ??= () => UnitManager.Instance().GetRandomUnitExceptType(Dwelling.DwellingType.castle);
+
+            var activatedUnit = Activator();
 
             string title = "Week # " + state.WeekNumber;
             string text = string.Empty;
 
-            text += "Astrologers proclaim: Week of the " + randomUnit.Name + " \r\n";
-            text += "All " + randomUnit.Name + " dwellings are repopulated. \r\n";
+            text += "Astrologers proclaim: Week of the " + activatedUnit.Name + " \r\n";
+            text += "All " + activatedUnit.Name + " dwellings are repopulated. \r\n";
 
             text += "\r\n";
 
@@ -44,9 +49,11 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
                 WeekNumber = state.WeekNumber,
                 AfterSpentCallback = () =>
                 {
-                    PopulateDwellings(randomUnit);
+                    CheckWeekOfPeasants(activatedUnit);
+                    PopulateDwellings(activatedUnit);
                     PopulateCastles();
                     state.AfterSpentCallback?.Invoke();
+                    Activator = null;
                 },
             });
         }
@@ -128,6 +135,27 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 
                 PlayerStats.Instance().DecreaseCastlesGarrisoned();
             });
+        }
+
+        private void CheckWeekOfPeasants(UnitScriptableObject activatedUnit)
+        {
+            if (activatedUnit != null && activatedUnit.Name == "Peasants")
+            {
+                var ghosts = PlayerSquads
+                    .Instance()
+                    .GetSquads()
+                    .Where(squad => squad.Unit.Name == "Ghosts")
+                    .FirstOrDefault();
+
+                if (ghosts != null)
+                {
+                    int ghostIndex = PlayerSquads.Instance().GetSquads().IndexOf(ghosts);
+                    int quantity = ghosts.CurrentQuantity();
+
+                    PlayerSquads.Instance().RemoveSquad(ghostIndex);
+                    PlayerSquads.Instance().AddOrRefillSquad(activatedUnit, quantity);
+                }
+            }
         }
     }
 }

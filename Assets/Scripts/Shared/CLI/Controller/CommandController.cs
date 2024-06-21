@@ -1,4 +1,5 @@
 using Assets.Scripts.Adventure.Events;
+using Assets.Scripts.Adventure.Logic.Interactors.Dialogs;
 using Assets.Scripts.Adventure.Logic.Systems;
 using Assets.Scripts.Shared.CLI.Commands;
 using Assets.Scripts.Shared.CLI.Handler;
@@ -38,6 +39,8 @@ namespace Assets.Scripts.Shared.CLI.Controller
         private static Command REVEAL_ALL;
         private static Command<int, int> MOVE;
         private static Command<string> TRAVEL;
+
+        private static Command<string> WEEK_OF;
 
         private void Awake()
         {
@@ -133,6 +136,17 @@ namespace Assets.Scripts.Shared.CLI.Controller
                 }
             });
 
+            WEEK_OF = new Command<string>("week_of", "Completes the week of chosen unit", "week_of <name>", (name) =>
+            {
+                var unit = UnitManager.Instance().GetUnitByName(name);
+
+                if (unit != null)
+                {
+                    WeekEndInteractor.Activator = () => unit;
+                    TimeSystem.Instance().WeekEnd(() => WeekEndInteractor.Activator = null);
+                }
+            });
+
             commands = new CommandCollection();
 
             commands.AddCommand(HELP);
@@ -150,6 +164,7 @@ namespace Assets.Scripts.Shared.CLI.Controller
             commands.AddCommand(REVEAL_ALL);
             commands.AddCommand(MOVE);
             commands.AddCommand(TRAVEL);
+            commands.AddCommand(WEEK_OF);
 
             handler = new CommandHandler(commands);
         }
