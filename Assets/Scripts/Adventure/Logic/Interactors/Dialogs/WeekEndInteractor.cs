@@ -15,7 +15,7 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {
     public class WeekEndInteractor : BaseDialogInteractor<ViewWeekEnd, DidViewWeekEnd>
     {
-        private const int GROW_PERIOD_IN_WEEKS = 4;
+        private const int GROW_PERIOD_IN_WEEKS = 12;
 
         public delegate UnitScriptableObject NextActivatedUnit();
         public static NextActivatedUnit Activator;
