@@ -15,8 +15,8 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
 
         [SerializeField] private List<UnitGroup> squads;
         [SerializeField] private bool isLoyal;
-        [SerializeField] private int spoilsOfWar;
-        [SerializeField] private int followers;
+        private int spoilsOfWar;
+        private int leadership;
 
         private Captain(string name) : base(name, ObjectType.captain)
         {
@@ -55,10 +55,10 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
             {
                 X = x,
                 Y = y,
-                followers = 0,
                 ContinentNumber = continentNumber,
                 isLoyal = false,
                 squads = new(),
+                leadership = 0,
             };
 
             // first check loyalty
@@ -101,6 +101,19 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
         public int GetSpoilsOfWar()
         {
             return spoilsOfWar;
+        }
+
+        public void CalculateLeadership()
+        {
+            leadership = squads.Aggregate(0, (acc, squad) =>
+            {
+                return acc + squad.CurrentQuantity() * squad.Unit.HP / ICombatable.LEADERSHIP_PENALTY;
+            });
+        }
+
+        public int GetLeadership()
+        {
+            return leadership;
         }
     }
 }

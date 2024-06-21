@@ -95,6 +95,7 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
                         ));
 
                     (state.Obj as Castle).CalculateSpoilsOfWar();
+                    (state.Obj as Castle).CalculateLeadership();
 
                     SceneLoader.Load(SceneLoader.Scene.CombatScene);
                 }

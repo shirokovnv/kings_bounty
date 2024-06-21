@@ -16,11 +16,11 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
         [SerializeField] private List<UnitGroup> squads = new();
         [SerializeField] private int tileIndex = 4;
         [SerializeField] private int strength;
-        [SerializeField] private int spoilsOfWar;
-        [SerializeField] private int followers;
         [SerializeField] private CastleOwner owner;
         [SerializeField] private bool isContracted;
         [SerializeField] private bool isVisited;
+        private int spoilsOfWar;
+        private int leadership;
 
         private Castle(string name) : base(name, ObjectType.castleGate)
         {
@@ -54,7 +54,7 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
                 ContinentNumber = continentNumber,
                 isVisited = false,
                 strength = strength,
-                followers = 0,
+                leadership = 0,
             };
 
             castle.BuildGarrison(units, strength);
@@ -146,6 +146,19 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
 
                 AddSquad(unit, quantity, UnitGroup.UnitOwner.opponent);
             }
+        }
+
+        public void CalculateLeadership()
+        {
+            leadership = squads.Aggregate(0, (acc, squad) =>
+            {
+                return acc + squad.CurrentQuantity() * squad.Unit.HP / ICombatable.LEADERSHIP_PENALTY;
+            });
+        }
+
+        public int GetLeadership()
+        {
+            return leadership;
         }
     }
 }

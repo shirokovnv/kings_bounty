@@ -10,6 +10,7 @@ using Assets.Scripts.Shared.Data.State.Adventure;
 using Assets.Scripts.Shared.Data.State.Combat;
 using Assets.Scripts.Shared.Events;
 using Assets.Scripts.Shared.Logic.Character;
+using Assets.Scripts.Shared.Logic.Character.Ranks;
 using UnityEngine;
 
 namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
@@ -35,6 +36,15 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
             text += "\r\n";
 
             text += "Spoils of war: " + combatable.GetSpoilsOfWar() + " gold. \r\n";
+
+            if (Player.Instance().GetRank().GetBaseRank() == BaseRank.Knight)
+            {
+                text += "\r\n";
+                text += $"As a noble knight, you get leadership bonus: {combatable.GetLeadership()}";
+                text += "\r\n";
+
+                PlayerStats.Instance().ChangeLeadership(combatable.GetLeadership());
+            }
 
             if (obj.GetObjectType() == ObjectType.captain)
             {

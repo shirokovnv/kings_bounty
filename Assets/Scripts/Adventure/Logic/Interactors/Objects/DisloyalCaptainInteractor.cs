@@ -70,6 +70,7 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Objects
                 ));
 
                 (state.Obj as Captain).CalculateSpoilsOfWar();
+                (state.Obj as Captain).CalculateLeadership();
 
                 SceneLoader.Load(SceneLoader.Scene.CombatScene);
             }
