@@ -13,6 +13,7 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
     {
         private const float LOYAL_PROBABILITY = 0.05f;
 
+        [SerializeField] private int strength;
         [SerializeField] private List<UnitGroup> squads;
         [SerializeField] private bool isLoyal;
         private int spoilsOfWar;
@@ -20,26 +21,6 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
 
         private Captain(string name) : base(name, ObjectType.captain)
         {
-        }
-
-        public int GetSquadsCount()
-        {
-            return squads.Count;
-        }
-
-        public bool IsLoyal()
-        {
-            return isLoyal;
-        }
-
-        public List<UnitGroup> GetSquads()
-        {
-            return squads;
-        }
-
-        protected void AddSquad(UnitScriptableObject unit, int quantity)
-        {
-            squads.Add(new UnitGroup(unit, quantity, UnitGroup.UnitOwner.opponent, 0, squads.Count));
         }
 
         public static Captain CreateRandom(
@@ -59,6 +40,7 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
                 isLoyal = false,
                 squads = new(),
                 leadership = 0,
+                strength = strength
             };
 
             // first check loyalty
@@ -83,6 +65,40 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
             }
 
             return captain;
+        }
+
+        public int GetSquadsCount()
+        {
+            return squads.Count;
+        }
+
+        public bool IsLoyal()
+        {
+            return isLoyal;
+        }
+
+        public List<UnitGroup> GetSquads()
+        {
+            return squads;
+        }
+
+        protected void AddSquad(UnitScriptableObject unit, int quantity)
+        {
+            squads.Add(new UnitGroup(unit, quantity, UnitGroup.UnitOwner.opponent, 0, squads.Count));
+        }
+
+        public void AddOrRefillSquad(UnitScriptableObject unit, int quantity, UnitGroup.UnitOwner owner)
+        {
+            var squad = squads.FirstOrDefault(s => s.Unit.Name == unit.Name);
+
+            if (squad != null)
+            {
+                squad.SetQuantity(quantity + squad.CurrentQuantity());
+            }
+            else
+            {
+                squads.Add(new UnitGroup(unit, quantity, owner, 0, squads.Count));
+            }
         }
 
         public BaseObject GetObject()
@@ -114,6 +130,17 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
         public int GetLeadership()
         {
             return leadership;
+        }
+
+        public void GrowInNumbers()
+        {
+            squads.ForEach(s =>
+            {
+                var unit = s.Unit;
+                int growQuantity = Mathf.FloorToInt(strength * ICombatable.GROW_COEFFICIENT / unit.HP);
+
+                AddOrRefillSquad(unit, growQuantity, UnitGroup.UnitOwner.opponent);
+            });
         }
     }
 }

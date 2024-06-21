@@ -160,5 +160,16 @@ namespace Assets.Scripts.Adventure.Logic.Continents.Object
         {
             return leadership;
         }
+
+        public void GrowInNumbers()
+        {
+            squads.ForEach(s =>
+            {
+                var unit = s.Unit;
+                int growQuantity = Mathf.FloorToInt( strength * ICombatable.GROW_COEFFICIENT / unit.HP );
+
+                AddOrRefillSquad(unit, growQuantity, UnitGroup.UnitOwner.opponent);
+            });
+        }
     }
 }

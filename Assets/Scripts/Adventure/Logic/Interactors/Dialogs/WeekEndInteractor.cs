@@ -15,6 +15,8 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
 {
     public class WeekEndInteractor : BaseDialogInteractor<ViewWeekEnd, DidViewWeekEnd>
     {
+        private const int GROW_PERIOD_IN_WEEKS = 4;
+
         public delegate UnitScriptableObject NextActivatedUnit();
         public static NextActivatedUnit Activator;
 
@@ -52,6 +54,12 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
                     CheckWeekOfPeasants(activatedUnit);
                     PopulateDwellings(activatedUnit);
                     PopulateCastles();
+
+                    if (state.WeekNumber % GROW_PERIOD_IN_WEEKS == 0)
+                    {
+                        GrowEnemiesInNumbers();
+                    }
+
                     state.AfterSpentCallback?.Invoke();
                     Activator = null;
                 },
@@ -156,6 +164,27 @@ namespace Assets.Scripts.Adventure.Logic.Interactors.Dialogs
                     PlayerSquads.Instance().AddOrRefillSquad(activatedUnit, quantity);
                 }
             }
+        }
+
+        private void GrowEnemiesInNumbers()
+        {
+            var castles = ContinentSystem
+                .Instance()
+                .GetContinents()
+                .SelectMany(c => c.GetCastles())
+                .Where(castle => castle.GetOwner() == CastleOwner.opponent)
+                .ToList();
+
+            castles.ForEach(castle => castle.GrowInNumbers());
+
+            var captains = ContinentSystem
+                .Instance()
+                .GetContinents()
+                .SelectMany(c => c.GetObjectsOfType(ObjectType.captain))
+                .Select(obj => obj as Captain)
+                .ToList();
+
+            captains.ForEach(captain => captain.GrowInNumbers());
         }
     }
 }
